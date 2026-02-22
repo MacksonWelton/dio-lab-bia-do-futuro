@@ -8,35 +8,75 @@
     "indicado_para": "Reserva de emergência e iniciantes"
   },
   {
-    "nome": "CDB Liquidez Diária",
+    "nome": "CDB",
     "categoria": "renda_fixa",
     "risco": "baixo",
-    "rentabilidade": "102% do CDI",
-    "aporte_minimo": 100.00,
-    "indicado_para": "Quem busca segurança com rendimento diário"
-  },
-  {
-    "nome": "LCI/LCA",
-    "categoria": "renda_fixa",
-    "risco": "baixo",
-    "rentabilidade": "95% do CDI",
+    "rentabilidade": "varia conforme emissor, geralmente próximo à Selic",
     "aporte_minimo": 1000.00,
-    "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
+    "indicado_para": "Investidores iniciantes e objetivos de curto a médio prazo"
   },
   {
-    "nome": "Fundo Multimercado",
-    "categoria": "fundo",
-    "risco": "medio",
-    "rentabilidade": "CDI + 2%",
-    "aporte_minimo": 500.00,
-    "indicado_para": "Perfil moderado que busca diversificação"
+    "nome": "LCI",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "atrelada ao CDI",
+    "aporte_minimo": 1000.00,
+    "indicado_para": "Investidores que buscam isenção de IR e segurança"
   },
   {
-    "nome": "Fundo de Ações",
-    "categoria": "fundo",
+    "nome": "Ações",
+    "categoria": "renda_variavel",
     "risco": "alto",
-    "rentabilidade": "Variável",
+    "rentabilidade": "varia conforme desempenho da empresa e mercado",
+    "aporte_minimo": 10.00,
+    "indicado_para": "Investidores experientes e objetivos de longo prazo"
+  },
+  {
+    "nome": "Fundos Imobiliários (FIIs)",
+    "categoria": "renda_variavel",
+    "risco": "moderado",
+    "rentabilidade": "distribuição de rendimentos e valorização das cotas",
+    "aporte_minimo": 10.00,
+    "indicado_para": "Investidores que buscam renda passiva e diversificação"
+  },
+  {
+    "nome": "ETFs",
+    "categoria": "renda_variavel",
+    "risco": "moderado",
+    "rentabilidade": "replica índices de mercado",
+    "aporte_minimo": 50.00,
+    "indicado_para": "Investidores que buscam diversificação com baixo custo"
+  },
+  {
+    "nome": "Fundos Multimercado",
+    "categoria": "fundos",
+    "risco": "variável",
+    "rentabilidade": "depende da estratégia do gestor",
+    "aporte_minimo": 500.00,
+    "indicado_para": "Investidores que aceitam risco moderado e diversificação"
+  },
+  {
+    "nome": "Previdência Privada (PGBL/VGBL)",
+    "categoria": "previdencia",
+    "risco": "variável",
+    "rentabilidade": "depende do fundo escolhido",
     "aporte_minimo": 100.00,
-    "indicado_para": "Perfil arrojado com foco no longo prazo"
+    "indicado_para": "Planejamento de aposentadoria e longo prazo"
+  },
+  {
+    "nome": "Criptomoedas",
+    "categoria": "alternativos",
+    "risco": "alto",
+    "rentabilidade": "alta volatilidade, depende do mercado",
+    "aporte_minimo": 50.00,
+    "indicado_para": "Investidores que aceitam risco elevado e buscam inovação"
+  },
+  {
+    "nome": "Commodities",
+    "categoria": "alternativos",
+    "risco": "moderado",
+    "rentabilidade": "varia conforme preço internacional",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Proteção contra inflação e diversificação"
   }
 ]
