@@ -28,7 +28,7 @@ O agente resolve esse problema ao traduzir conceitos financeiros para uma lingua
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-Lynch [Seu educador de investimentos]
+Lynx Finance [Seu educador de investimentos]
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
