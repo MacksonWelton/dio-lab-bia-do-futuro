@@ -10,7 +10,8 @@
 
 - Datasets públicos do Hugging Face, como:
   - **Financial Phrasebank**: frases financeiras para treinar explicações educativas.  
-  - **FinanceBench**: perguntas e respostas financeiras para simular interações educativas.  
+  - **FinanceBench**: perguntas e respostas financeiras para simular interações educativas.
+  - **FiQA (Financial Question Answering)**: Utilizado para refinar o raciocínio do agente em respostas baseadas em opiniões e análises de especialistas.
 
 ---
 
@@ -68,17 +69,23 @@ Existem duas possibilidades que é injetar diretamente no prompt (CTRL + C, CTRL
 ```python
 import pandas as pd
 import json
+from datasets import load_dataset
 
-# Carregando o histórico de atendimento (CSV)
+# 1. Carregamento de Dados Locais
 historico = pd.read_csv('historico_atendimento.csv')
 
-# Carregando o perfil do investidor (JSON)
 with open('perfil_investidor.json', 'r', encoding='utf-8') as f:
     perfil = json.load(f)
 
-# Carregando o catálogo de produtos financeiros (JSON)
 with open('produtos_financeiros.json', 'r', encoding='utf-8') as f:
     produtos = json.load(f)
+
+# 2. Carregamento de Dados Públicos (Hugging Face)
+# Frases para base educativa e análise de tom
+phrasebank = load_dataset("financial_phrasebank", "sentences_allagree", split='train')
+
+# Base de perguntas e respostas financeiras
+finance_bench = load_dataset("PatronusAI/financebench", split='train')
 
 ```
 
