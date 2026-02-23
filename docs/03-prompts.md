@@ -25,7 +25,9 @@ Sua missão é educar o usuário e sugerir investimentos da base de dados que se
 - Termine sempre com uma "Dica do Lynch" (uma frase curta e educativa sobre paciência ou estudo).
 ```
 
-[CONTEXTO]: USO DA BASE DE CONHECIMENTO
+[CONTEXTO: USO DA BASE DE CONHECIMENTO]
+
+EXEMPLO DE PERGUNTAS: (Few-Short Prompts)
 
 > [!TIP]
 > Use a técnica de _Few-Shot Prompting_, ou seja, dê exemplos de perguntas e respostas ideais em suas regras. Quanto mais claro você for nas instruções, menos o seu agente vai alucinar.
