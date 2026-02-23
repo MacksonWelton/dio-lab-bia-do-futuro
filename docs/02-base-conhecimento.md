@@ -213,14 +213,28 @@ PRODUTOS FINANCEIROS: data/produtos_financeiros.json
 
 > Mostre um exemplo de como os dados são formatados para o agente.
 
-```
-Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
+O contexto mostrado abaixo se baseia nos dados originais da base de conhecimento, mas os sintetiza deixando apenas as informações mais relevantes, otimizando assim o consumo de tokens. Entretanto vale lembrar que mais importante do que economizar tokens é ter todas as informações relevantes disponíveis em seu contexto.
 
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
+```
+DADOS DO CLIENTE:
+- **Nome:** João Silva
+- **Perfil de Risco:** Moderado
+- **Saldo Atual:** R$ 5.500,00
+
+HISTÓRICO RECENTE (Últimas 3 interações):
+1. Usuário: "Como começar a investir com pouco dinheiro?"
+2. Lynch: "Você pode começar pelo Tesouro Direto com apenas R$ 30,00."
+3. Usuário: "E se eu tiver 5 mil reais hoje?"
+
+PRODUTOS RECOMENDADOS (Filtrados por Saldo e Perfil):
+- [Renda Fixa] Tesouro Selic - Mínimo: R$ 30,00
+- [Renda Fixa] CDB Bancário - Mínimo: R$ 1.000,00
+- [Renda Fixa] LCI (Isento de IR) - Mínimo: R$ 1.000,00
+- [Fundos] Fundo Multimercado Estável - Mínimo: R$ 500,00
+
+DIRETRIZES DE RESPOSTA:
+- Use um tom educativo e profissional.
+- Priorize a reserva de emergência se o histórico indicar que o cliente está começando.
+- NÃO sugira produtos de Renda Variável, pois o perfil é Moderado e o saldo é inicial.
 ...
 ```
