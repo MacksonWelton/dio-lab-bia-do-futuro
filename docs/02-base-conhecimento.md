@@ -2,7 +2,7 @@
 
 ## Dados Utilizados
 
-| Arquivo | Formato | Para que serve no Lynch |
+| Arquivo | Formato | Para que serve no Lynx Finance |
 |---------|---------|---------------------|
 | `historico_atendimento.csv` | CSV | Contextualizar interações anteriores e ajudar a dar continuidade ao atendimento |
 | `perfil_investidor.json` | JSON | Personalizar recomendações com base no perfil do investidor |
@@ -230,7 +230,7 @@ DADOS DO CLIENTE:
 
 HISTÓRICO RECENTE (Últimas 3 interações):
 1. Usuário: "Como começar a investir com pouco dinheiro?"
-2. Lynch: "Você pode começar pelo Tesouro Direto com apenas R$ 30,00."
+2. Lynx Finance: "Você pode começar pelo Tesouro Direto com apenas R$ 30,00."
 3. Usuário: "E se eu tiver 5 mil reais hoje?"
 
 PRODUTOS RECOMENDADOS (Filtrados por Saldo e Perfil):
