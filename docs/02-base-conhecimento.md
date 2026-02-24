@@ -87,6 +87,13 @@ phrasebank = load_dataset("financial_phrasebank", "sentences_allagree", split='t
 # Base de perguntas e respostas financeiras
 finance_bench = load_dataset("PatronusAI/financebench", split='train')
 
+# Carrega o sentimento do mercado (PhraseBank)
+sentimento_mercado = load_dataset("financial_phrasebank", "sentences_allagree", split='train')
+
+# Loading the specialist Q&A pairs
+fiqa_queries = load_dataset("beir/fiqa", "queries", split="train")
+fiqa_corpus = load_dataset("beir/fiqa", "corpus", split="train")
+
 ```
 
 ### Como os dados são usados no prompt?
