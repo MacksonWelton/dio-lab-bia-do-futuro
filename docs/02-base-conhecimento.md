@@ -8,11 +8,6 @@
 | `perfil_investidor.json` | JSON | Personalizar recomendações com base no perfil do investidor |
 | `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
 
-- Datasets públicos do Hugging Face, como:
-  - **Financial Phrasebank**: frases financeiras para treinar explicações educativas.  
-  - **FinanceBench**: perguntas e respostas financeiras para simular interações educativas.
-  - **FiQA (Financial Question Answering)**: Utilizado para refinar o raciocínio do agente em respostas baseadas em opiniões e análises de especialistas.
-
 ---
 
 ## Adaptações nos Dados
@@ -68,31 +63,13 @@ Existem duas possibilidades que é injetar diretamente no prompt (CTRL + C, CTRL
 
 ```python
 import pandas as pd
-import json
-from datasets import load_dataset
+
+DATA_PATH = root_dir / "data"
 
 # 1. Carregamento de Dados Locais
-historico = pd.read_csv('historico_atendimento.csv')
-
-with open('perfil_investidor.json', 'r', encoding='utf-8') as f:
-    perfil = json.load(f)
-
-with open('produtos_financeiros.json', 'r', encoding='utf-8') as f:
-    produtos = json.load(f)
-
-# 2. Carregamento de Dados Públicos (Hugging Face)
-# Frases para base educativa e análise de tom
-phrasebank = load_dataset("financial_phrasebank", "sentences_allagree", split='train')
-
-# Base de perguntas e respostas financeiras
-finance_bench = load_dataset("PatronusAI/financebench", split='train')
-
-# Carrega o sentimento do mercado (PhraseBank)
-sentimento_mercado = load_dataset("financial_phrasebank", "sentences_allagree", split='train')
-
-# Loading the specialist Q&A pairs
-fiqa_queries = load_dataset("beir/fiqa", "queries", split="train")
-fiqa_corpus = load_dataset("beir/fiqa", "corpus", split="train")
+perfil = pd.read_json(DATA_PATH / 'perfil_investidor.json')
+historico = pd.read_csv(DATA_PATH / 'historico_atendimento.csv', sep=',', encoding='utf-8')
+produtos = pd.read_json(DATA_PATH / 'produtos_financeiros.json')
 
 ```
 
