@@ -48,13 +48,26 @@ Crie testes simples para validar seu agente:
 
 ---
 
+## Matriz de Avaliação de Respostas
+
+| Métrica | O que avalia | Exemplo de teste | Nota (1-5) 
+| :--- | :--- | :--- | :---: |
+| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar o saldo e receber o valor correto. | |
+| **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe. | |
+| **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador. | |
+| **Didática** | O tom "Peter Lynch" foi mantido? | Explicar um produto complexo com analogias simples e modernas. | |
+| **Grounding** | Uso correto da base local. | Recomendar apenas itens contidos no `produtos_financeiros.json`. | |
+
 ## Resultados
 
-Após os testes, registre suas conclusões:
+Após a rodada de testes, as seguintes observações foram registradas para guiar as próximas sprints de desenvolvimento:
 
-**O que funcionou bem:**
-- [Liste aqui]
+### O que funcionou bem
+* **Integração de Dados:** O cruzamento entre o `perfil_investidor.json` e o contexto da IA permitiu respostas personalizadas (o bot sabe quem é o usuário).
+* **Interface Streamlit:** O carregamento dos dados e a exibição do chat funcionaram de forma fluida após o ajuste dos caminhos de diretório (`src/`).
+* **Persona (Lynx Finance):** A IA conseguiu manter o tom amigável e simplificar conceitos técnicos através de analogias.
 
-**O que pode melhorar:**
-- [Liste aqui]
-monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
+### O que pode melhorar
+* **Tratamento de Erros:** Implementar uma mensagem mais amigável caso a API do Gemini atinja o limite de uso ou a chave esteja inválida.
+* **Escopo de Recomendação:** Refinar o `SYSTEM_PROMPT` para garantir que a IA nunca sugira ações para perfis conservadores, mesmo sob insistência do usuário.
+* **Monitoramento:** Adicionar um sistema de logs para salvar as perguntas dos usuários e as avaliações de feedback em um banco de dados ou CSV para análise futura.
