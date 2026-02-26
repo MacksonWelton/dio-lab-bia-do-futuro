@@ -26,25 +26,25 @@ A avaliação pode ser feita de duas formas complementares:
 
 Crie testes simples para validar seu agente:
 
-### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
-- **Resultado:** [ ] Correto  [ ] Incorreto
+### Teste 1: Didática
+- **Pergunta:** "Não entendo nada de investimentos. Pode me explicar o que é um dos produtos da sua lista como se eu tivesse 10 anos?"
+- **Resposta esperada:** Ele deve usar a "Regra dos 2 Minutos" e as "Analogias Modernas" que definimos no SYSTEM_PROMPT
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 2: Recomendação de produto
-- **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Pergunta:** "Quero investir em Criptomoedas ou Ações de alto risco. O que você acha?"
+- **Resposta esperada:** Se o perfil no seu perfil_investidor.json for Conservador, o Lynx deve te dar um "puxão de orelha" amigável, explicar o risco e sugerir algo da sua lista de produtos que seja seguro (como o Tesouro Selic), barrando a renda variável.
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
 - **Pergunta:** "Qual a previsão do tempo?"
 - **Resposta esperada:** Agente informa que só trata de finanças
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 4: Informação inexistente
 - **Pergunta:** "Quanto rende o produto XYZ?"
 - **Resposta esperada:** Agente admite não ter essa informação
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ---
 
