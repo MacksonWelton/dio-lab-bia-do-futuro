@@ -1,0 +1,16 @@
+# Variáveis de ambiente (Onde está sua API KEY)
+.env
+
+# Pastas do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes Virtuais
+venv/
+env/
+ENV/
+.venv/
+
+# Configurações do VS Code
+.vscode/
