@@ -6,6 +6,7 @@
 src/
 ├── app.py              # Aplicação principal (Streamlit)
 ├── .env                # Veriavéis de ambiente (API KEY)
+├── .gitignore          # Remove arquivos não úteis ou sensíveis
 └── requirements.txt    # Dependências
 ```
 
